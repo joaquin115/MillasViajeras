@@ -15,7 +15,8 @@ Millas Viajeras - Publicacion
                     <h2 class="fw-bolder">{{ publicaciones.titulo }}</h2>
                     <h6>Fecha: {{publicaciones.fecha_viaje}} | Creado por: <i>{{publicaciones.autor}}</i></h6>
                     <br>
-                    <p class="lead fw-normal text-muted mb-0">{{ publicaciones.descripcion }}</p>
+                    <p class="lead fw-normal text-muted mb-0">{{ publicaciones.descripcion|safe }}</p>
+
                 </div>
             </div>
         </div>

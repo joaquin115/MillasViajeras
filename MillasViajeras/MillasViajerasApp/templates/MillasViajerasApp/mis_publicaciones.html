@@ -21,7 +21,7 @@ Millas Viajeras - Mis Publicaciones
             <div class="card-body p-4">
                 <div class="badge bg-primary bg-gradient rounded-pill mb-2">{{publicacion.pais}}</div>
                 <h5 class="card-title mb-3">{{publicacion.titulo}}</h5></a>
-                <p class="card-text mb-0">{{publicacion.descripcion|slice:120}}...</p>
+                <p class="card-text mb-0">{{publicacion.descripcion|slice:120|safe}}...</p>
                 <br>
                 <p class="card-text mb-0" style="color: grey;">Creado por: <i>{{publicacion.autor}}</i></p>
                 <p class="card-text mb-0" style="color: grey;">Fecha: <i>{{publicacion.fecha_viaje}}</i></p>
